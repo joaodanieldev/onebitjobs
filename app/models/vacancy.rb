@@ -8,6 +8,5 @@ class Vacancy < ApplicationRecord
             presence: true
   validates :requirements, presence: true
   validates :salary, presence: true
-  validates :avaible, presence: true
-
+  
 end
