@@ -1,26 +1,26 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-5">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5 ">
   <div class="container container-fluid">
     <a class="navbar-brand" href="/vacancies/all">
-      <img class="navbar-brand" src="/assets/onebitjobs.png" alt="Onebitjobs logo" height="45" />
+      <img class="navbar-brand" src="/assets/onebitjobs.png" class='img-fluid' alt="Onebitjobs logo" height="45" />
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="/vacancies/all">Vagas</a>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+        <li class="nav-item ">
+          <a class="nav-link text-white" href="/vacancies/all">Vagas</a>
         </li>
         <% unless company_signed_in? %>
           <li class="nav-item">
-            <a class="nav-link" href="/companies/sign_up">Anunciar</a>
+            <a class="nav-link text-white" href="/companies/sign_up">Anunciar</a>
           </li>
         <% else %>
           <li class="nav-item">
-            <a class="nav-link" href="/vacancies/new">Anunciar</a>
+            <a class="nav-link text-white" href="/vacancies/new">Anunciar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/vacancies">Meus Anúncios</a>
+            <a class="nav-link text-white" href="/vacancies">Meus Anúncios</a>
           </li>
         <% end %>
       </ul>
@@ -31,12 +31,10 @@
             </li>
           <% else %>
             <li class="nav-item">
-                <a class="nav-link" href="/companies/sign_in">Entrar</a>
+                <a class="nav-link text-white" href="/companies/sign_in">Entrar</a>
             </li>
           <% end %>
       </ul>
     </div>
-    <%# Itens começam aqui embaixo %>
-    <%# E terminam aqui em cima %>
   </div>
 </nav>
